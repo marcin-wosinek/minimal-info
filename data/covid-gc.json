@@ -1,0 +1,10 @@
+[
+  {
+    "date": "2021-04-07",
+    "cumulative_incidence": 77.4,
+    "max": 179,
+    "date_of_max": "2020-09-05",
+    "last_wave": 123.6,
+    "date_of_last_wave": "2021-02-02"
+  }
+]
