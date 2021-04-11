@@ -11,7 +11,13 @@ export default function () {
       <p>
         As of {data.date} the cumulative incidence for 100.000 people is{" "}
         <b>{data.cumulative_incidence}</b>. It's{" "}
-        <b>{Math.floor((100 * data.cumulative_incidence) / data.last_wave)}%</b>{" "}
+        <b>
+          {Math.floor((100 * data.cumulative_incidence) / data.week_earlier)}%
+        </b>{" "}
+        of the weak earlier,
+        <b>
+          {Math.floor((100 * data.cumulative_incidence) / data.last_wave)}%
+        </b>{" "}
         of the peak of the last wave of {data.date_of_last_wave} &{" "}
         <b>{Math.floor((100 * data.cumulative_incidence) / data.max)}%</b> of
         the highest recorded value of {data.date_of_max}.
